@@ -1,0 +1,607 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,700;1,500;1,700&display=swap');
+
+
+html{
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+main{
+    margin: 0;
+    padding: 0;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+h3{
+    font-size: 100px;
+    font-weight: 700;
+    margin-top: 132px;
+}
+h3::first-letter{
+    color: #ec9704;
+}
+header{
+    position: fixed;
+    z-index: 1000;
+}
+.wrapper{
+    max-width: 1360px;/* врапер тута */
+    margin: auto;
+}
+.header_table{
+    max-width: 969px;
+    float: right;   
+}
+.header_table td{
+    font-weight: 700;
+    font-size: 24px;
+    padding-right: 48px;
+    padding-top: 21px;
+}
+.header_table a{
+    transition: 0.2s;
+    color: #f8c916;
+}
+.header_table a:hover{
+    transition: 0.2s;
+    color: #fff;
+}
+
+.color_white{
+    transition: 0.2s;
+    color: #fff !important;
+}
+
+.bar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 85px;
+    background-color: rgba(0, 0, 0, 0.46);
+}
+.logo_text{
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+    float: left;
+}
+.main_background{
+    z-index: -2;
+    width: 100%;
+    height: 1357px;
+    background-image: url("../pic/main_background.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    -webkit-mask:url(../pic/main_background.png) center no-repeat;
+}
+.pipes{
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 1357px;
+    background-image: url(../pic/pipes.png);
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-name: move_around_bg;
+}
+.man{
+    position: absolute;
+    left: 5%;
+    top: 21%;
+}
+
+main h1{
+    font-weight: 700;
+    font-size: 102px;
+    color: #fff;
+    margin: 0;
+    padding-top: 40%;
+}
+main p{
+    font-weight: 500;
+    font-size: 45px;
+    color: #fff;
+}
+.main_text_things p{
+        margin-top: 28px; 
+        margin-bottom: 80px;  
+}
+.button_call{
+    width: 815px;
+    height: 100px;
+    border: solid;
+    border-radius: 36px;
+    border-width: 8px;
+    transition: 0.2s;
+    border-color: #fff;
+}
+.button_call p{
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.button_call:hover{
+    transition: 0.2s;
+    background-color: #fff;
+}
+
+.button_call:hover p{
+    transition: 0.2s;
+    color: #df9808;
+}
+
+.button_call:active{
+    transition: 0.2s;
+    background-color: #583e27;
+    border-color: #583e27;
+}
+
+.main_text_things{
+    margin-right: -7%;
+    width: 815px;
+    float: right; 
+}
+.sausage{
+    position: absolute;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-name: move_around;
+}
+.sausage_who{
+    right: 0;
+    top: 1400px;
+}
+.who_paragraff{
+    font-size: 48px;
+    font-weight: 500;
+    width: 759px;
+    height: 518px;
+    margin-top: 150px;
+    float: right;
+}
+.me_image{
+    position: absolute;
+    left: 0px;
+    top: 1747px;
+}
+.folio{
+    z-index: -100;
+    margin-top: 350px;
+    width: 100%;
+    height: 4549px;
+    background-repeat: no-repeat;
+    background-position: top;
+    
+    background-image: url("../pic/folio_bg.png");
+    background-repeat: no-repeat;
+    
+}
+.folio .wrapper h3{
+    padding-top: 213px;
+    color: #fff;
+}
+.sausage_folio_top{
+    right: 0;
+    top: 2544px;
+}
+.sausage_folio_bottom_right{
+    right: 0;
+    top: 4334px;
+}
+.sausage_folio_bottom_left{
+    left: 0;
+    top: 5920px;
+}
+
+.folio_a{
+    display: block;
+    width: 1000px;
+    margin: auto;
+    font-size: 48px;
+    font-weight: 600;
+    color: #f8c916;
+    
+}
+.git_image{
+    float: left;
+}
+.folio_a p{
+    padding-top: 40px;
+    float: right;
+    text-decoration: underline;
+}
+
+.work p{
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+    width: 472px;
+    height: 273px;
+    margin: 0;
+    margin-top: 46px;
+}
+
+.work h4{
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    margin: 0;
+    margin-top: 10px;
+}
+.work img{
+    display: block;
+    margin: auto;
+}
+.image{
+    height: 100%;
+    
+}
+.web .image, .sunduki .image{
+    width: 648px;
+    float: left;
+}
+.planes .image{
+    width: 600px;
+    float: right;
+}
+
+.planes .text h4{
+    text-align: left;
+}
+.web h4{
+    margin-top: 0px;
+}
+
+
+.sunduki .text, .web .text{
+    /* width: 472px; */
+    width: 648px;
+    margin: 0 auto;
+    float: right;
+}
+
+.planes .text{
+    width: 472px;
+    float: left;
+    margin-left: 8%;
+}
+
+.planes p{
+    margin-left: auto;
+}
+
+.sunduki, .planes, .web{
+    margin-top: 113px;
+    height: 110%;
+}
+
+.projects{
+    font-size: 72px;
+    padding-top: 150px;
+    color: #fff;
+    padding-left: 6%;
+}
+.projects::first-letter{
+    color: #ec9704;
+}
+.tb_projects{
+    width: 100%;
+    text-align: center;
+    font-size: 60px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.tb_projects td{
+    padding: 40px;
+}
+.colortext{
+    transition: 0.2s;
+    color: #f8c916; 
+}
+
+.colortext:hover{
+    animation-duration: 0.4s;
+    animation-name: colorchange;
+}
+
+.why_me h3{
+    margin-top: -70px;
+}
+.why_me p{
+    width: 90%;
+    font-size: 60px;
+    margin: auto;
+}
+.counter table{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 72px;
+    font-weight: 700;
+    margin-top: 258px;
+    
+}
+.counter table form{
+    transition: 0.2s;
+    text-align: left;
+    padding-left: 10%;
+    transition: 0.2s;
+    width: 80%;
+}
+.equals{
+    transition: 0.2s;
+    text-align: left;
+    padding-left: -100px;
+}
+#output{
+    display: block;
+    text-align: center;
+    width: 481px;
+}
+.counter table tr{
+    transition: 0.2s;
+    padding: 40px;
+}
+form input, form label{
+    transition: 0.2s;
+    padding-bottom: 43px;
+}
+form input:last-child, form label:last-child{
+    transition: 0.2s;
+    padding-bottom: 0;
+}  
+
+.prices h3{
+    margin-top: 300px;
+}
+
+/* для элемента input c type="checkbox" */
+.custom_checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+    width: 75px;
+    height: 75px;
+  }
+  .custom_checkbox+label::before {
+    transition: 0.2s;
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 10px solid #2d2d2d;
+    border-radius: 32px;
+    margin-right: 31px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+
+  /* для элемента label, связанного с .custom_checkbox */
+  .custom_checkbox+label {
+    transition: 0.2s;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+
+  /* стили при наведении курсора на checkbox */
+  .custom_checkbox:not(:disabled):not(:checked)+label:hover::before {
+    transition: 0.2s;
+    border-color: #ec9704;
+  }
+
+  /* стили для активного чекбокса (при нажатии на него) */
+  .custom_checkbox:not(:disabled):active+label::before {
+    transition: 0.2s;
+    border-color: #ec9704;
+  }
+
+  /* стили для чекбокса, находящегося в состоянии checked */
+  .custom_checkbox:checked+label::before {
+    transition: 0.2s;
+    border-color: #ec9704;
+    background-image: url("../pic/check.png");
+  }
+.price_tb{
+    border-collapse: collapse;
+    font-size: 40px;
+    font-weight: 500;
+    width: 100%;
+    
+}
+/* .price_tb td{
+    
+} */
+
+.price_tb td:nth-child(even){
+    border: solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 0 36px 36px 0;
+    border-width: 10px;
+
+    text-align: center;
+}
+
+.price_tb td:nth-child(odd){
+    border-radius: 36px 0 0 36px;
+}
+
+
+
+
+.price_tb td{
+    padding: 36px;
+}
+.price_tb tr:nth-child(odd){
+    background-color: #2d2d2d;
+    color: #ffffff;
+    
+}
+.contacts{
+    background-image: url("../pic/folio_bg.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    margin-top: 138px;
+}
+.contacts h3{
+    margin-top: 0;
+    padding-top: 136px;
+    color: #fff;
+}
+.logo{
+    display: block;
+    float: left;
+    padding-right: 20px;
+    width: 90px;
+}
+
+.contacts a{
+    display: block;
+    width: 1118px;
+    height: 90px;
+    margin: auto;
+    font-size: 60px;
+    font-weight: 500;
+    padding-bottom: 90px;
+}
+footer{
+    width: 100%;
+    /* height: 84px; */
+    background-color: #212121;
+}
+
+footer p{
+    width: 300px;
+    margin: 0 auto;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+
+}
+
+.sausage_prices_top{
+    z-index: -1;
+    left: 0;
+    top: 8731px;
+}
+.sausage_contacts_bottom{
+    right: 0;
+    top: 9826px;
+}
+.sausage_contacts{
+    left: 0;
+    top: 9856px;
+}
+.rubles{
+    right: 21%;
+    top: 8825px;
+    width: 100px;
+}
+
+.shake{
+    animation-duration: 0.2s;
+    animation-name: shake;
+}
+@keyframes move_around {
+    0%{
+        /* margin-right: 0%; */
+        padding-top: 0;
+    }
+    25%{
+        /* margin-right: -0.25%; */
+        padding-top: 0.2%;
+    }
+    50%{
+        /* margin-right: -0.5%; */
+        padding-top: 0.3%;
+    }
+    80%{
+        /* margin-right: 0; */
+        padding-top: 0.2%;
+    }
+    100%{
+        /* margin-right: 0%; */
+        padding-top: 0;
+    }
+}
+
+@keyframes colorchange {
+    0%{
+        color: #f8c916;
+    }
+    50%{
+        color: #583e27;
+    }
+    100%{
+        color: #f8c916;
+    }
+    
+}
+
+@keyframes move_around_image {
+    0%{
+        /* margin-right: 0%; */
+        margin-top: -1%;
+    }
+    25%{
+        /* margin-right: -0.25%; */
+        margin-top: -3;
+    }
+    50%{
+        /* margin-right: -0.5%; */
+        margin-top: 0;
+    }
+    80%{
+        /* margin-right: 0; */
+        margin-top: -3%;
+    }
+    100%{
+        /* margin-right: 0%; */
+        margin-top: -1%;
+    }
+}
+
+@keyframes shake {
+    0% {padding-top: 20px;}
+    50% {padding-top: -20px;}
+    100% {padding-top: 0;}
+}
+@keyframes fade_in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes move_around_bg {
+    0%{
+        top: 0;
+    }
+    50%{
+        top: 1%;
+    }
+    100%{
+        top: 0;
+    }
+}
