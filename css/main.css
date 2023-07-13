@@ -998,6 +998,20 @@ footer p{
         right: 4%;
         width: 192px;
     }
+	.work h4{
+		font-size: 44px;	
+	}
+	.work p{
+		font-size: 50px;	
+	}
+	form input, form label {
+    transition: 0.2s;
+    padding-bottom: 67px;
+}
+	label, #output {
+    font-size: 43px;
+}
+	
 }
 
 
