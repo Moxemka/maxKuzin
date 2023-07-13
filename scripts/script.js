@@ -156,6 +156,5 @@ function onReady(callback) {
   }
   
   onReady(function() {
-    setVisible('.bar', true);
     setVisible('#loading', false);
   });

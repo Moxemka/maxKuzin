@@ -2,12 +2,11 @@
 
 
 #loading {
-    z-index: 10000;
+    z-index: 121;
     display: block;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
     width: 100vw;
     height: 100vh;
     background-color: #262626;
@@ -27,9 +26,6 @@
 	height: 100%;
 	overflow: hidden;
     padding-top: 20px;
-}
-.bar {
-    display: none;
 }
 .port_tb{
     margin: 0 auto;
@@ -65,7 +61,7 @@
     width: 163px;
     border: none;
     outline: none;
-    z-index: 101;
+    z-index: 98;
     display: none;
 }
 html{
@@ -138,6 +134,7 @@ header{
 }
 
 .bar{
+    z-index: 98;
     position: fixed;
     top: 0;
     width: 100%;
@@ -989,7 +986,7 @@ footer p{
         width: auto;
     }
     label, #output{
-        font-size: 33px;
+        font-size: 5vw;
     }
     .price_tb td{
         font-size: 40px;
@@ -1026,7 +1023,7 @@ footer p{
 	}
 	form input, form label {
         transition: 0.2s;
-        padding-bottom: 67px;
+        padding-bottom: 100px;
     }
 	label, #output {
         font-size: 43px;
