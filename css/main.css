@@ -994,6 +994,7 @@ footer p{
         margin-top: 115px;
     }
     .rubles {
+	display: none;
         top: 8186px;
         right: 4%;
         width: 192px;
