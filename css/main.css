@@ -61,7 +61,7 @@
     width: 163px;
     border: none;
     outline: none;
-    z-index: 98;
+    z-index: 100;
     display: none;
 }
 html{
