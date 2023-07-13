@@ -1,15 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,500;0,700;1,500;1,700&display=swap');
 
-
+.phone_bar{
+    z-index: 100;
+	background-color: #2d2d2d;
+	color: #fff;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+    padding-top: 20px;
+}
+.port_tb{
+    margin: 0 auto;
+}
+.phone_bar a{
+	font-size: 50px;
+	text-decoration: none;
+	margin-bottom: 100px;
+	text-align: left;
+	padding-left: 12%;
+    display: block;
+	line-height: 39px;
+	color: #ec9704;
+	font-weight: bold;
+    width: 340px;
+}
+.phone_bar a:first-child{
+    margin-top: 229px;
+}
+.phone_bar a:active{
+	transition: 0.1s;
+	color: #fff;
+	outline: none;
+}
+.slice{
+    position: fixed;
+    top: 3vh;
+    right: 6vw;
+    background:url(../pic/slice_open.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 163px;
+    width: 163px;
+    border: none;
+    outline: none;
+    z-index: 101;
+    display: none;
+}
 html{
     font-family: 'Montserrat';
     margin: 0;
     padding: 0;
+    width: 100%;
+    /* width: 1900px; */
     
 }
 body{
     padding: 0;
     margin: 0;
+    width: 100%;
+    /* overflow: hidden; */
+
 }
 main{
     margin: 0;
@@ -26,6 +79,7 @@ a{
 }
 h3{
     font-size: 100px;
+    /* font-size: 5.2vw; */
     font-weight: 700;
     margin-top: 132px;
 }
@@ -101,8 +155,9 @@ header{
 .man{
     position: absolute;
     left: 5%;
-    top: 21%;
+    margin-top: 210px;
 }
+
 
 main h1{
     font-weight: 700;
@@ -177,9 +232,10 @@ main p{
     float: right;
 }
 .me_image{
-    position: absolute;
+    position:  absolute;
     left: 0px;
     top: 1747px;
+    /* width: 50%; */
 }
 .folio{
     z-index: -100;
@@ -492,8 +548,7 @@ footer{
 }
 
 footer p{
-    width: 300px;
-    margin: 0 auto;
+    margin: 0;
     padding-top: 22px;
     padding-bottom: 22px;
     font-size: 24px;
@@ -516,14 +571,30 @@ footer p{
     top: 9856px;
 }
 .rubles{
+    position: absolute;
     right: 21%;
     top: 8825px;
     width: 100px;
 }
 
+.work, .planes, .web{
+    opacity: 0;
+}
+
 .shake{
     animation-duration: 0.2s;
     animation-name: shake;
+}
+
+.fade_in{
+    animation-duration: 1s;
+    animation-name: fade_in;
+}
+.opacity{
+    opacity: 1 !important;
+}
+.port_tb td{
+    padding: 10px;
 }
 @keyframes move_around {
     0%{
@@ -589,11 +660,24 @@ footer p{
     50% {padding-top: -20px;}
     100% {padding-top: 0;}
 }
+
 @keyframes fade_in {
     from {opacity: 0;}
     to {opacity: 1;}
 }
+@keyframes fade_out {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }
+@keyframes open {
+    from {width: 0%;}
+    to {width: 100%;}
+  }
 
+  @keyframes close {
+    from {width: 100%;}
+    to {width: 0%;}
+  }
 @keyframes move_around_bg {
     0%{
         top: 0;
@@ -605,3 +689,321 @@ footer p{
         top: 0;
     }
 }
+@keyframes rotation_in {
+    0% {
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+@keyframes rotation_out {
+    0% {
+        transform:rotate(360deg);
+    }
+    100%{
+        transform:rotate(0deg);
+    }
+}
+
+@media screen and (max-width: 1890px){
+    .sausage_contacts, .sausage_prices_top, .sausage_folio_bottom_left{
+        left: -5%;
+    }
+    
+    .me_image{
+        width: 40vw;
+    }
+}
+
+@media screen and (max-width: 1717px){
+    .sausage_contacts, .sausage_prices_top, .sausage_folio_bottom_left{
+        left: -5%;
+    }
+    .sausage_folio_top{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1295px){
+    .sausage, .sausage_contacts, .sausage_prices_top, .sausage_folio_bottom_left, .sausage_folio_top, .sausage_folio_bottom_right, .sausage_who, .sausage_contacts_bottom{
+        display: none;
+    }
+    .web .image, .sunduki .image{
+        width: 18.125vw;
+    }
+    .planes .image{
+        width: 600px;
+        float: none;
+    }
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 1679px){
+    .sausage_contacts, .sausage_prices_top, .sausage_folio_bottom_left{
+        left: -15%;
+    }
+    .sausage_folio_bottom_right{
+        display: none;
+    }
+    
+    
+}
+
+
+/* адаптация сайта под моники */
+@media screen and (max-width: 1600px){
+    .rubles{
+        position: absolute;
+        right: 14%;
+        top: 8619px;
+        width: 100px;
+    }
+    .sausage_contacts_bottom{
+        top: 9674px;
+    }
+    .sausage_contacts{
+        top: 9635px;
+    }
+    .folio_a{
+        width: 100%;
+    }
+    .bar{
+        height: 5.42vw;
+    }
+    .header_table td, .logo_text{
+        font-size: 1.51vw;
+    }
+    .header_table td{
+        padding-top: 1.25vw;
+    }
+    .folio_a p{
+        padding: 0;
+    }
+    
+    .main_text_things{
+        margin-top: 140px;
+        margin-right: 10px;
+        width: 600px;
+    }
+    main h1{
+        font-weight: 700;
+        font-size: 75px;
+        color: #fff;
+        margin: 0;
+        padding-top: 40%;
+    }
+    main p{
+        font-weight: 500;
+        font-size: 45px;
+        color: #fff;
+    }
+    .main_text_things p{
+            margin-top: 28px; 
+            margin-bottom: 80px;  
+    }
+    .button_call{
+        width: 615px;
+        height: 90px;
+        border: solid;
+        border-radius: 36px;
+        border-width: 8px;
+        transition: 0.2s;
+        border-color: #fff;
+    }
+    .button_call p{
+        font-size: 35px;
+        font-weight: 500;
+        text-align: center;
+        margin: 0;
+        padding-top: 25px;
+    }
+
+    footer p, main p, .button_call p, .who_paragraff, .folio_a, .price_tb{
+        font-size: 2.34vw;
+    }
+    
+    .contacts a, .folio_a, .work h4, .why_me p{
+        font-size: 3.12vw;
+    }
+    .tb_projects td{
+        font-size: 3.82vw;
+    }
+    
+    .work h4, .counter table{
+        font-size: 3.75vw;
+    }
+    .man{
+        /* width: 41.6vw; */
+        /* margin-top: 10.9vw; */
+        left: -5%;
+        /* rotate: 90; */
+    }
+    .sunduki_img{
+        width: 19vw;
+    }
+    .web .sunduki_img{
+        width: 25vw;
+    } 
+
+}
+
+/* адаптация под мобилки */
+@media screen and (max-width: 1018px)
+{
+    .work img {
+        margin: 0;
+        margin-left: 45%;
+    }
+    .git_image{
+        float: none;
+    } 
+    .folio_a p{
+        float: none;
+    }
+    .bar{
+        display: none;
+    }
+    .slice{
+        display: block;
+    }
+    .main_text_things{
+        margin: 0 auto;
+        float: none; 
+        width: 800px;
+    }
+    h3{
+        font-size: 100px;
+    }
+    main h1{
+        padding-top: 60px;
+        font-size: 160px;
+    }
+    .main_text_things p{
+        font-size: 5vw;
+    }
+    .button_call{
+        width: 100%;
+        height: 150px;
+        border: solid;
+        border-radius: 50px;
+        border-width: 10px;
+        transition: 0.2s;
+        border-color: #fff;
+    }
+    
+    
+    .man{
+        top: 814px;
+        width: 50%;
+        left: 0;
+        margin: 0;
+        transform:rotate(347deg);
+    }
+    .me_image{
+        z-index: -1;
+        width: 80%;
+        position: absolute;
+        text-align: center;
+        
+        top: 2547px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+
+        content:url("../pic/me_round_edges.png");
+
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-name: move_around;
+    }
+    .who_am_i{
+        height: 1554px;
+    }
+    .who_paragraff{
+        margin: 0 auto;
+        width: 90%;
+        float: none;
+    }
+    footer p, main p, .who_paragraff, .folio_a, .price_tb{
+        font-size: 62px;
+    }
+    
+    .contacts a, .folio_a, .work h4, .why_me p{
+        font-size: 35px;
+    }
+    .tb_projects td{
+        font-size: 50px;
+    }
+    .contacts a{
+        width: 100%;
+    }
+    .folio{
+        height: 3840px;
+    }
+    .button_call p{
+        font-size: 60px;
+        font-weight: 500;
+        text-align: center;
+        margin: 0;
+        padding-top: 35px;
+    }
+    .projects{
+        padding-top: 0;
+    }
+    .sunduki_img{
+        width: 300px;
+        margin-left: 8%
+    }
+    .plane .sunduki_img{
+        margin-left: 0;
+    }
+    .web .sunduki_img{
+        width: 300px;
+    } 
+    .sunduki .text, .web .text{
+        width: auto;
+    }
+    label, #output{
+        font-size: 33px;
+    }
+    .price_tb td{
+        font-size: 40px;
+    }   
+    .contacts a{
+        font-size: 46px;
+    }
+    footer p{
+        font-size: 20px;
+    }
+    .folio{
+        background-image: url("../pic/folio_bg_mobile.png");
+    }
+    .why_me h3{
+        margin-top: 10px;
+    }
+    .counter table {
+        margin-top: 115px;
+    }
+    .prices h3{
+        margin-top: 115px;
+    }
+    .rubles {
+        top: 8146px;
+        right: 4%;
+        width: 192px;
+    }
+}
+
+
+
+
+
+
+
+

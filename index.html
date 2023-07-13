@@ -2,15 +2,20 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=1920, initial-scale=1, user-scalable=0, minimum-scale=0.9, maximum-scale=1">
+    <meta property="og:title" content="Кузин Максим, программист">
+  	<meta property="og:description" content="Делаю всё возможное">
+  	<meta property="og:image" content="pic/me_round_edges.png">
+    <!-- <meta name="viewport" content="width=device, initial-scale=1, user-scalable=0, minimum-scale=0.9, maximum-scale=1"> -->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="pic/me_logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кузин Максим программист</title>
 </head>
 <body>
     <header>
         <div class="bar">
             <div class="wrapper">
-                <p class="logo_text"><span class="colortext">max.</span>kuzin</p>
+                <p href="#main" class="logo_text"><span class="colortext">max.</span>kuzin</p>
                 <table class="header_table" id="menu">
                     <tr>
                         <td><a href="#main" class="menu_item menu_main">Главная</a></td>
@@ -23,6 +28,15 @@
                 </table>
                 <div class="clearfix"></div>
             </div>
+        </div>
+        <input type="button" class="slice" id="hider"/>
+        <div class="phone_bar" id="phone_bar" hidden>
+            <a href="#main" class="menu_item menu_main">Главная</a>
+            <a href="#who" class="menu_item menu_who">Кто я</a>
+            <a href="#folio" class="menu_item menu_folio">Портфолио</a>
+            <a href="#why" class="menu_item menu_why">Почему я</a>
+            <a href="#price" class="menu_item menu_price">Цены</a>
+            <a href="#contacts" class="menu_item menu_contacts">Контакты</a>
         </div>
     </header>
     <main id="main">
@@ -48,7 +62,7 @@
         <img class="sausage sausage_who" src="pic/sausage_who.png" alt="">
         <div class="wrapper">
             <h3>Кто я?</h3>
-            <img src="pic/me.png" alt="Я" class="me_image">
+            <img src="pic/me-4.png" alt="Я" class="me_image">
             <div class="who_paragraff">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </div>
             <div class="clearfix"></div>
         </div>
@@ -60,13 +74,16 @@
             <img src="pic/sausage_folio_bottom-right.png" alt="" class="sausage sausage_folio_bottom_right">
             <img src="pic/sausage_folio_bottom-left.png" alt="" class="sausage sausage_folio_bottom_left">
             <a class="folio_a" href="https://github.com/Moxemka" target="_blank">
-                <p>https://github.com/Moxemka</p>
-                <img src="pic/git3d.gif" alt="git" class="git_image">
+                <table class="port_tb">
+                    <tr>
+                        <td><img src="pic/git3d.gif" alt="git" class="git_image"></td>
+                        <td><p>https://github.com/Moxemka</p></td>
+                    </tr>
+                </table>
                 
-                <div class="clearfix"></div>
             </a>
-            <div class="work">
-                <h4 class="projects">Проекты</h4>
+            <h4 class="projects">Проекты</h4>
+            <div class="work" id = "work">
                 <div class="sunduki">
                     <div class="image"><img src="pic/Sunduki_phone.png" alt="" class="sunduki_img"></div>
                     <div class="text">
@@ -75,7 +92,7 @@
                     </div>
                     <div class="clearfix"></div>
                 </div>
-                <div class="planes">
+                <div class="planes" id = "planes">
                     <div class="text">
                         <h4>What a plane</h4>
                         <p>Lorem ipsum dolor sit amet, consectetur </p>
@@ -83,7 +100,7 @@
                     <div class="image"></div><img src="pic/Plane_phone.png" alt="" class="sunduki_img"></div>
                     <div class="clearfix"></div>
                 
-                <div class="web">
+                <div class="web" id = "web">
                     <div class="image"><img src="pic/web_ipad.png" alt="" class="sunduki_img"></div>
                     <div class="text">
                         <h4>Сайт</h4>
@@ -175,7 +192,7 @@
             </table>
         </div>
         <img src="pic/sausage_price_top.png" alt="adsdasasd" class="sausage sausage_prices_top">
-        <img src="pic/rub3d.gif" alt="" class="sausage rubles">
+        <img src="pic/rub3d.gif" alt="" class="rubles">
     </div>
     <div class="contacts" id="contacts">
         <img src="pic/sausage_contacts.png" alt="" class="sausage sausage_contacts">
