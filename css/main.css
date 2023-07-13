@@ -123,9 +123,25 @@ header{
     transition: 0.2s;
     color: #f8c916;
 }
-.header_table a:hover{
-    transition: 0.2s;
-    color: #fff;
+
+@media (hover: hover){
+    .header_table a:hover{
+        transition: 0.2s;
+        color: #fff;
+    }
+     /* стили при наведении курсора на checkbox */
+    .custom_checkbox:not(:disabled):not(:checked)+label:hover::before {
+        transition: 0.2s;
+        border-color: #ec9704;
+    }
+    .button_call:hover{
+        transition: 0.2s;
+        background-color: #fff;
+    }
+    .button_call:hover p{
+        transition: 0.2s;
+        color: #df9808;
+    }
 }
 
 .color_white{
@@ -208,15 +224,9 @@ main p{
     padding-top: 20px;
 }
 
-.button_call:hover{
-    transition: 0.2s;
-    background-color: #fff;
-}
 
-.button_call:hover p{
-    transition: 0.2s;
-    color: #df9808;
-}
+
+
 
 .button_call:active{
     transition: 0.2s;
@@ -477,11 +487,10 @@ form input:last-child, form label:last-child{
     user-select: none;
   }
 
-  /* стили при наведении курсора на checkbox */
   .custom_checkbox:not(:disabled):not(:checked)+label:hover::before {
     transition: 0.2s;
-    border-color: #ec9704;
-  }
+    border-color: #2d2d2d;
+    }
 
   /* стили для активного чекбокса (при нажатии на него) */
   .custom_checkbox:not(:disabled):active+label::before {
